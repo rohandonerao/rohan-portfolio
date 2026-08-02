@@ -63,7 +63,9 @@ export default function Footer() {
           <ul className="flex flex-col gap-4 text-sm text-muted">
             <li>
               <a
-                href={`mailto:${siteConfig.email}`}
+                href={siteConfig.emailHref}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-2.5 transition-colors hover:text-accent"
               >
                 <Mail size={15} className="shrink-0 text-accent-3" />

@@ -88,7 +88,9 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href={`mailto:${siteConfig.email}`}
+            href={siteConfig.emailHref}
+            target="_blank"
+            rel="noreferrer"
             className="glow-border rounded-full border border-border bg-white/5 px-5 py-2 text-base font-medium text-foreground transition-colors hover:border-accent/60"
           >
             Let&apos;s Talk
@@ -129,7 +131,9 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href={`mailto:${siteConfig.email}`}
+                href={siteConfig.emailHref}
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-1 rounded-xl border border-border bg-white/5 px-4 py-3 text-center text-base font-medium text-foreground"
               >

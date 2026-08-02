@@ -12,6 +12,8 @@ export const siteConfig = {
   location: "Pune, India",
   phone: "+91 8830815312",
   email: "rohandonerao24@gmail.com",
+  emailHref:
+    "https://mail.google.com/mail/?view=cm&fs=1&to=rohandonerao24@gmail.com",
   resumeUrl: "/resume.pdf",
   profileImage: "/images/profile.png",
   social: {
@@ -73,30 +75,39 @@ export const projects = [
       "A multi-functional Flutter mobile app built to improve user communication and productivity — with spam call & message filtering, an AI-powered chatbot assistant, emergency SOS with real-time location sharing, and intelligent contact management. Powered by a Firebase backend (Firestore, Cloud Messaging, Analytics) for real-time, scalable performance.",
     tags: ["Flutter", "Dart", "Firebase", "Cloud Messaging"],
     category: "Mobile Apps",
-    github: "https://github.com/rohandonerao",
+    github: "https://github.com/rohandonerao/cyberx",
     featured: true,
   },
   {
-    title: "TaskFlow",
+    title: "HealthScout",
     description:
-      "A Flutter productivity app for organizing daily tasks with reminders, categories, and offline-first sync powered by Firebase Firestore.",
-    tags: ["Flutter", "Firebase", "Provider"],
+      "A Flutter healthcare app concept for discovering nearby care, tracking personal health info, and staying on top of wellness — all from one clean mobile interface.",
+    tags: ["Flutter", "Dart", "Firebase"],
     category: "Mobile Apps",
-    github: "https://github.com/rohandonerao",
+    github: "https://github.com/rohandonerao/healthscout",
     featured: false,
   },
   {
-    title: "Insight Dashboard",
+    title: "Smart Bus Pass",
     description:
-      "An interactive Power BI dashboard on Azure that transforms raw business data into actionable visual insights for faster, data-driven decisions.",
-    tags: ["Power BI", "Microsoft Azure", "Data Analysis"],
-    category: "Data & Cloud",
-    github: "https://github.com/rohandonerao",
+      "A Flutter app that digitizes the bus pass experience — letting commuters apply for, renew, and verify passes directly from their phone.",
+    tags: ["Flutter", "Dart"],
+    category: "Mobile Apps",
+    github: "https://github.com/rohandonerao/smart_bus_pass",
+    featured: false,
+  },
+  {
+    title: "AgroBuzz",
+    description:
+      "A Flutter app concept connecting farmers with buyers and real-time market updates to simplify agricultural trade.",
+    tags: ["Flutter", "Dart"],
+    category: "Mobile Apps",
+    github: "https://github.com/rohandonerao/agro_buzz",
     featured: false,
   },
 ];
 
-export const projectCategories = ["All", "Mobile Apps", "Data & Cloud"];
+export const projectCategories = ["All", "Mobile Apps"];
 
 export const experience = [
   {

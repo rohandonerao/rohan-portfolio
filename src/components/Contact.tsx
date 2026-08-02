@@ -60,7 +60,9 @@ export default function Contact() {
             </div>
 
             <a
-              href={`mailto:${siteConfig.email}`}
+              href={siteConfig.emailHref}
+              target="_blank"
+              rel="noreferrer"
               className="font-display break-all text-2xl font-semibold text-foreground transition-colors hover:text-accent md:text-3xl"
             >
               {siteConfig.email}
@@ -68,7 +70,9 @@ export default function Contact() {
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
-                href={`mailto:${siteConfig.email}`}
+                href={siteConfig.emailHref}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-2 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_30px_-8px_var(--accent)] transition-transform duration-300 hover:scale-[1.03]"
               >
                 <Mail size={16} />
