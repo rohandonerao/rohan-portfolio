@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, Download, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowRight, Sparkles } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { siteConfig } from "@/lib/data";
 import RotatingText from "@/components/RotatingText";
@@ -72,12 +72,10 @@ export default function Hero() {
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href={siteConfig.resumeUrl}
-              download
+              href="#contact"
               className="glow-border inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent/50"
             >
-              <Download size={16} />
-              Resume
+              Get in Touch
             </a>
           </motion.div>
 

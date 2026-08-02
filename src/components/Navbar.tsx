@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/data";
 
 export default function Navbar() {
@@ -88,12 +88,12 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href={siteConfig.emailHref}
-            target="_blank"
-            rel="noreferrer"
-            className="glow-border rounded-full border border-border bg-white/5 px-5 py-2 text-base font-medium text-foreground transition-colors hover:border-accent/60"
+            href={siteConfig.resumeUrl}
+            download
+            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-2 px-5 py-2 text-base font-semibold text-white shadow-[0_0_20px_-6px_var(--accent)] transition-transform duration-300 hover:scale-[1.03] hover:shadow-[0_0_28px_-4px_var(--accent)]"
           >
-            Let&apos;s Talk
+            <Download size={16} className="transition-transform group-hover:-translate-y-0.5" />
+            Download Resume
           </a>
         </div>
 
@@ -131,13 +131,13 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href={siteConfig.emailHref}
-                target="_blank"
-                rel="noreferrer"
+                href={siteConfig.resumeUrl}
+                download
                 onClick={() => setOpen(false)}
-                className="mt-1 rounded-xl border border-border bg-white/5 px-4 py-3 text-center text-base font-medium text-foreground"
+                className="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-2 px-4 py-3 text-center text-base font-semibold text-white shadow-[0_0_20px_-6px_var(--accent)]"
               >
-                Let&apos;s Talk
+                <Download size={16} />
+                Download Resume
               </a>
             </div>
           </motion.div>
