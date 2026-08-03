@@ -30,12 +30,12 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-20"
     >
-      <div className="section-container grid w-full items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="section-container grid w-full items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
         <motion.div
           variants={container}
           initial="hidden"
           animate="show"
-          className="flex flex-col items-start"
+          className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left"
         >
           <motion.span
             variants={item}
@@ -102,7 +102,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.85, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="relative mx-auto hidden aspect-square w-full max-w-sm lg:block"
+          className="relative order-1 mx-auto aspect-square w-full max-w-[240px] sm:max-w-xs lg:order-2 lg:max-w-sm"
         >
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent via-accent-2 to-accent-3 opacity-30 blur-3xl" />
           <div className="glow-border relative flex h-full w-full items-center justify-center rounded-full border border-border bg-card/60 p-3 backdrop-blur">
@@ -113,27 +113,27 @@ export default function Hero() {
                 alt={siteConfig.name}
                 fill
                 priority
-                sizes="(min-width: 1024px) 384px, 320px"
+                sizes="(min-width: 1024px) 384px, (min-width: 640px) 320px, 240px"
                 className="object-cover"
               />
             </div>
 
             <motion.div
-              className="glass-panel absolute -left-6 top-10 flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium text-foreground shadow-lg"
+              className="glass-panel absolute -left-3 top-6 flex items-center gap-2 rounded-xl px-2.5 py-1.5 text-[11px] font-medium text-foreground shadow-lg sm:-left-6 sm:top-10 sm:px-3 sm:py-2 sm:text-xs"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             >
               💙 Flutter
             </motion.div>
             <motion.div
-              className="glass-panel absolute -right-4 top-1/3 flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium text-foreground shadow-lg"
+              className="glass-panel absolute -right-2 top-1/3 flex items-center gap-2 rounded-xl px-2.5 py-1.5 text-[11px] font-medium text-foreground shadow-lg sm:-right-4 sm:px-3 sm:py-2 sm:text-xs"
               animate={{ y: [0, 14, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             >
               🔥 Firebase
             </motion.div>
             <motion.div
-              className="glass-panel absolute -bottom-2 left-8 flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium text-foreground shadow-lg"
+              className="glass-panel absolute -bottom-1 left-4 flex items-center gap-2 rounded-xl px-2.5 py-1.5 text-[11px] font-medium text-foreground shadow-lg sm:-bottom-2 sm:left-8 sm:px-3 sm:py-2 sm:text-xs"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
             >
